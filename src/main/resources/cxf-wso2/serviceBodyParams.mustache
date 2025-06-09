@@ -1,1 +1,1 @@
-{{#isBodyParam}}{{{dataType}}} {{paramName}}{{/isBodyParam}}
+{{#isBodyParam}}{{#isArray}}List<{{{items.dataType}}}>{{/isArray}}{{^isArray}}{{{dataType}}}{{/isArray}} {{paramName}}{{/isBodyParam}}
